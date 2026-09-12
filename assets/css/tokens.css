@@ -1,0 +1,166 @@
+/* ============================================================
+   ZAGROS JAWAR — PORTFOLIO
+   tokens.css — design tokens (colors, type, spacing)
+   Single source of truth. Change a value here, it updates everywhere.
+   ============================================================ */
+
+:root{
+  /* ---- Colors: Base ---- */
+  --bg-base:      #FAF9F6;
+  --bg-surface:   #FFFFFF;
+  --text-ink:     #1A1A17;
+  --text-muted:   #5C5953;
+  --brand-accent: #1C4A3E;
+  --brand-accent-hover: #16382F;
+  --brand-tint:   #E9EFEA;
+  --border-hairline: #E8E4DC;
+
+  /* ---- Colors: Functional accents (fills/graphics only, never text) ---- */
+  --accent-sage:  #589167;
+  --accent-clay:  #CE724F;
+  --accent-amber: #F5C26F;
+  --accent-blue:  #2CAAD7;
+
+  /* ---- Fonts ---- */
+  --font-display: 'Schibsted Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono:    'Spline Sans Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* ---- Easing ---- */
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ---- Layout ---- */
+  --maxw: 1180px;
+  --radius: 18px;
+}
+
+*{ box-sizing:border-box; margin:0; padding:0; }
+html{ scroll-behavior:smooth; }
+@media (prefers-reduced-motion: reduce){ html{ scroll-behavior:auto; } }
+
+body{
+  background:var(--bg-base);
+  color:var(--text-ink);
+  font-family:var(--font-display);
+  font-size:17px;
+  line-height:1.6;
+  -webkit-font-smoothing:antialiased;
+}
+
+a{ color:inherit; text-decoration:none; }
+img{ max-width:100%; display:block; }
+::selection{ background:var(--brand-tint); color:var(--brand-accent); }
+:focus-visible{ outline:2px solid var(--brand-accent); outline-offset:3px; border-radius:4px; }
+
+.wrap{
+  max-width:var(--maxw);
+  margin:0 auto;
+  padding-left:40px;
+  padding-right:40px;
+}
+@media (max-width:900px){ .wrap{ padding-left:32px; padding-right:32px; } }
+@media (max-width:640px){ .wrap{ padding-left:24px; padding-right:24px; } }
+
+/* ---- Type styles (utility classes matching the locked type ladder) ---- */
+.mono-label{
+  font-family:var(--font-mono);
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:.1em;
+  text-transform:uppercase;
+  color:var(--text-muted);
+}
+
+h1, .h1{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:clamp(2.5rem, 6vw, 5.5rem);
+  line-height:1.02;
+  letter-spacing:-.035em;
+  color:var(--text-ink);
+}
+h2, .h2{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:clamp(1.7rem, 3vw, 2.3rem);
+  line-height:1.1;
+  letter-spacing:-.02em;
+  color:var(--text-ink);
+}
+h3, .h3{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:clamp(1.4rem, 2.4vw, 1.9rem);
+  line-height:1.05;
+  letter-spacing:-.025em;
+  color:var(--text-ink);
+}
+h4, .h4{
+  font-family:var(--font-display);
+  font-weight:600;
+  font-size:1.4rem;
+  line-height:1.15;
+  letter-spacing:-.015em;
+  color:var(--text-ink);
+}
+p, .body{
+  font-family:var(--font-display);
+  font-weight:400;
+  font-size:17px;
+  line-height:1.6;
+  color:var(--text-ink);
+}
+.body-large{
+  font-family:var(--font-display);
+  font-weight:400;
+  font-size:clamp(1.1rem, 1.8vw, 1.25rem);
+  line-height:1.5;
+  color:var(--text-muted);
+}
+blockquote{
+  font-family:var(--font-display);
+  font-weight:500;
+  font-size:1.5rem;
+  line-height:1.35;
+  letter-spacing:-.015em;
+  color:var(--text-ink);
+  border-left:3px solid var(--brand-accent);
+  padding-left:1.4rem;
+  margin:2rem 0;
+}
+
+/* ---- Links (inline, in body copy) ---- */
+.prose a{
+  color:var(--brand-accent);
+  text-decoration:underline;
+  transition:color .2s ease;
+}
+.prose a:hover{ color:var(--brand-accent-hover); }
+
+/* ---- Buttons ---- */
+.btn{
+  font-family:var(--font-display);
+  font-size:.98rem;
+  font-weight:500;
+  cursor:pointer;
+  border-radius:999px;
+  padding:.85rem 1.5rem;
+  display:inline-block;
+  transition:transform .2s ease, background .2s ease, border-color .2s ease, color .2s ease;
+  border:1px solid var(--text-ink);
+}
+.btn-primary{ background:var(--text-ink); color:var(--bg-base); }
+.btn-primary:hover{ background:var(--brand-accent); border-color:var(--brand-accent); }
+.btn-ghost{ background:transparent; color:var(--text-ink); border-color:var(--border-hairline); }
+.btn-ghost:hover{ border-color:var(--text-ink); }
+
+/* ---- Tags ---- */
+.tag{
+  font-family:var(--font-mono);
+  font-size:.66rem;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  color:var(--text-muted);
+  border:1px solid var(--border-hairline);
+  padding:.28rem .6rem;
+  border-radius:999px;
+}
