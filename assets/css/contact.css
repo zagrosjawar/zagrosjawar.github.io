@@ -1,0 +1,46 @@
+/* ============================================================
+   contact.css — Contact (centered) + Footer
+   ============================================================ */
+
+.contact{
+  text-align:center;
+  padding-top:144px;
+  padding-bottom:96px;
+}
+@media (max-width:900px){ .contact{ padding-top:112px; } }
+@media (max-width:640px){ .contact{ padding-top:80px; padding-bottom:64px; } }
+
+.contact-heading{
+  font-size:clamp(2rem, 5vw, 3.4rem);
+  max-width:18ch;
+  margin:0 auto 40px;
+}
+
+.contact-actions{
+  display:flex; justify-content:center; align-items:center;
+  gap:14px; flex-wrap:wrap;
+  margin-bottom:24px;
+}
+.contact-actions .btn{ font-size:1.05rem; padding:1rem 2rem; }
+
+.contact-social{
+  display:flex; justify-content:center; gap:24px;
+}
+.contact-social a{ color:var(--text-muted); transition:color .2s ease; }
+.contact-social a:hover{ color:var(--text-ink); }
+
+footer{
+  border-top:1px solid var(--border-hairline);
+  padding:40px 0;
+}
+.foot-inner{
+  display:flex; justify-content:space-between; align-items:center;
+  gap:16px; flex-wrap:wrap;
+}
+.foot-links{ display:flex; gap:24px; }
+.foot-links a{ font-size:.9rem; color:var(--text-muted); transition:color .2s ease; }
+.foot-links a:hover{ color:var(--text-ink); }
+
+@media (max-width:640px){
+  .foot-inner{ flex-direction:column; align-items:flex-start; gap:16px; }
+}

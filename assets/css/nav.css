@@ -1,0 +1,87 @@
+/* ============================================================
+   nav.css — sticky navigation: logo, links, mobile menu, scroll hairline
+   ============================================================ */
+
+.nav{
+  position:sticky; top:0; z-index:50;
+  background:var(--bg-base);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s ease, background .3s ease;
+}
+.nav.scrolled{
+  border-bottom-color:var(--border-hairline);
+  background:color-mix(in srgb, var(--bg-base) 90%, transparent);
+  backdrop-filter:blur(10px);
+  -webkit-backdrop-filter:blur(10px);
+}
+
+.nav-inner{
+  display:flex; align-items:center; justify-content:space-between;
+  height:68px;
+  max-width:var(--maxw); margin:0 auto;
+  padding-left:40px; padding-right:40px;
+}
+@media (max-width:900px){ .nav-inner{ padding-left:32px; padding-right:32px; } }
+@media (max-width:640px){ .nav-inner{ padding-left:24px; padding-right:24px; } }
+
+.brand{
+  display:flex; align-items:center; gap:9px;
+  font-weight:600; font-size:1rem; color:var(--text-ink);
+  background:none; border:none; cursor:pointer; font-family:inherit;
+}
+.brand-dot{
+  width:8px; height:8px; border-radius:50%;
+  background:var(--brand-accent);
+  position:relative;
+}
+.brand-dot::after{
+  content:'';
+  position:absolute; inset:0; border-radius:50%;
+  border:1.5px solid var(--brand-accent);
+  opacity:0;
+}
+.brand-dot.echo-pulse::after{
+  animation: navEcho .8s var(--ease) forwards;
+}
+@keyframes navEcho{
+  0%{ opacity:.9; transform:scale(1); }
+  100%{ opacity:0; transform:scale(3.5); }
+}
+
+.nav-links{ display:flex; align-items:center; gap:32px; }
+.nav-link{
+  font-size:.92rem; color:var(--text-muted);
+  transition:color .2s ease;
+}
+.nav-link:hover{ color:var(--text-ink); }
+
+.nav-cta{
+  font-size:.9rem; color:var(--text-ink);
+  border:1px solid var(--border-hairline);
+  padding:.5rem 1rem; border-radius:999px;
+  transition:border-color .2s ease, background .2s ease, color .2s ease;
+}
+.nav-cta:hover{ border-color:var(--text-ink); background:var(--text-ink); color:var(--bg-base); }
+
+/* ---- Mobile menu button ---- */
+.nav-menu-btn{
+  display:none;
+  font-family:var(--font-mono); font-size:12px; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--text-ink); background:none; border:none; cursor:pointer;
+}
+
+/* ---- Mobile dropdown panel ---- */
+.nav-mobile-panel{
+  display:none;
+  flex-direction:column;
+  gap:24px;
+  padding:24px 24px 40px;
+  border-top:1px solid var(--border-hairline);
+}
+.nav-mobile-panel a.h3{ color:var(--text-ink); }
+
+@media (max-width:640px){
+  .nav-links:not(.nav-mobile-panel){ display:none; }
+  .nav-menu-btn{ display:block; }
+  .nav.open .nav-mobile-panel{ display:flex; }
+}

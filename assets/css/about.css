@@ -1,0 +1,26 @@
+/* ============================================================
+   about.css — About section: Skills + Bio
+   ============================================================ */
+
+.about-body{
+  display:grid;
+  grid-template-columns:.8fr 1.2fr;
+  gap:64px;
+  align-items:start;
+}
+@media (max-width:820px){
+  .about-body{ grid-template-columns:1fr; gap:40px; }
+  .about-body .about-bio{ order:1; }
+  .about-body .about-skills{ order:2; }
+}
+
+.about-skills{ display:flex; flex-direction:column; gap:24px; }
+.skill-group .mono-label{ display:block; margin-bottom:8px; }
+.skill-group p{ font-size:1rem; color:var(--text-ink); line-height:1.7; }
+
+.about-bio p{
+  font-size:clamp(1.05rem, 1.6vw, 1.2rem);
+  line-height:1.55;
+  letter-spacing:-.005em;
+}
+.about-bio p + p{ margin-top:1.2rem; color:var(--text-muted); }

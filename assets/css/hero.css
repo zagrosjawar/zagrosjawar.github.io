@@ -1,0 +1,122 @@
+/* ============================================================
+   hero.css — hero layout + "Clarity from Chaos" animation
+   ============================================================ */
+
+.hero{
+  background:var(--bg-base);
+  padding-top:128px;
+  padding-bottom:96px;
+  position:relative;
+  overflow:hidden;
+}
+@media (max-width:900px){ .hero{ padding-top:96px; padding-bottom:64px; } }
+@media (max-width:640px){ .hero{ padding-top:64px; padding-bottom:48px; } }
+
+.hero-container{
+  position:relative;
+  max-width:720px;
+}
+
+.hero-eyebrow{
+  display:flex; align-items:center; gap:10px;
+  margin-bottom:28px;
+  opacity:0;
+  animation:heroFadeUp .6s var(--ease) 2.35s forwards;
+}
+.hero-eyebrow .line{ width:34px; height:1px; background:var(--brand-accent); }
+
+.hero-h1{
+  margin-bottom:28px;
+  filter:blur(14px); opacity:0;
+  animation:heroSharpen 1.3s var(--ease) .15s forwards;
+}
+.hero-h1 .mark{
+  position:relative; color:var(--brand-accent); display:inline-block;
+}
+.hero-h1 .mark .underline{
+  position:absolute; left:0; bottom:-.06em; height:.06em; width:100%;
+  background:var(--brand-accent);
+  transform-origin:left center; transform:scaleX(0);
+  animation:heroDrawUnderline .55s var(--ease) 2.1s forwards;
+}
+.hero-h1 .period{
+  position:relative; opacity:0;
+  animation:heroPeriodPop .3s var(--ease) 2s forwards;
+}
+
+.hero-sub{
+  max-width:540px; margin-bottom:32px;
+  opacity:0;
+  animation:heroFadeUp .6s var(--ease) 2.5s forwards;
+}
+
+.hero-actions{
+  display:flex; gap:14px; flex-wrap:wrap;
+  margin-bottom:64px;
+  opacity:0;
+  animation:heroFadeUp .6s var(--ease) 2.65s forwards;
+}
+
+.hero-meta{
+  display:flex; gap:56px; flex-wrap:wrap;
+  border-top:1px solid var(--border-hairline);
+  padding-top:26px;
+  opacity:0;
+  animation:heroFadeUp .6s var(--ease) 2.8s forwards;
+}
+.hero-meta-item{ display:flex; flex-direction:column; gap:6px; }
+.hero-meta-item .v{ font-size:1rem; color:var(--text-ink); }
+
+@media (max-width:640px){
+  .hero-meta{ flex-direction:column; gap:20px; }
+}
+
+@keyframes heroSharpen{ to{ filter:blur(0px); opacity:1; } }
+@keyframes heroFadeUp{ from{ opacity:0; transform:translateY(10px); } to{ opacity:1; transform:translateY(0); } }
+@keyframes heroDrawUnderline{ to{ transform:scaleX(1); } }
+@keyframes heroPeriodPop{ from{ opacity:0; } to{ opacity:1; } }
+
+/* ---- Particle field ---- */
+.particle-field{
+  position:absolute; inset:0;
+  pointer-events:none; z-index:1; overflow:hidden;
+}
+.particle-field .p{
+  position:absolute; border-radius:50%;
+  width:var(--sz); height:var(--sz);
+  top:var(--sy); left:var(--sx);
+  background:var(--pc);
+  filter:blur(3px); opacity:.55;
+  will-change:transform, opacity, filter;
+  animation: chaosToOrder 2s var(--ease) var(--pd) forwards;
+}
+@keyframes chaosToOrder{
+  0%{ transform: translate(0,0) scale(1); opacity:.5; filter:blur(3px); }
+  18%{ transform: translate(var(--jx), var(--jy)) scale(1); opacity:.65; filter:blur(2px); }
+  50%{ transform: translate(var(--gx), var(--gy)) scale(.7); opacity:.95; filter:blur(0px); }
+  62%{ transform: translate(var(--gx), var(--gy)) scale(.7); opacity:.95; filter:blur(0px); }
+  100%{ transform: translate(var(--tx), var(--ty)) scale(.12); opacity:0; filter:blur(0px); }
+}
+.particle-field .resolve-dot{
+  position:absolute; width:7px; height:7px; border-radius:50%;
+  background:var(--brand-accent);
+  left:var(--dotx); top:var(--doty); opacity:0; transform:scale(0);
+  animation: popIn .5s var(--ease) 2s forwards; z-index:2;
+}
+@keyframes popIn{ 0%{opacity:0;transform:scale(0)} 55%{opacity:1;transform:scale(1.7)} 100%{opacity:1;transform:scale(1)} }
+.particle-field .resolve-ring{
+  position:absolute; width:7px; height:7px; border-radius:50%;
+  border:1.5px solid var(--brand-accent);
+  left:var(--dotx); top:var(--doty); opacity:0;
+  animation: ringPulse .8s var(--ease) 2s forwards; z-index:2;
+}
+@keyframes ringPulse{ 0%{opacity:.9;transform:scale(1)} 100%{opacity:0;transform:scale(4.5)} }
+
+/* ---- Reduced motion: everything appears instantly, no animation ---- */
+@media (prefers-reduced-motion: reduce){
+  .particle-field{ display:none; }
+  .hero-h1{ filter:none !important; opacity:1 !important; animation:none !important; }
+  .hero-h1 .mark .underline{ transform:scaleX(1) !important; animation:none !important; }
+  .hero-h1 .period{ opacity:1 !important; animation:none !important; }
+  .hero-eyebrow, .hero-sub, .hero-actions, .hero-meta{ opacity:1 !important; animation:none !important; }
+}

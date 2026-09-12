@@ -1,0 +1,37 @@
+/* ============================================================
+   more-work.css — secondary project index (quiet, no images)
+   ============================================================ */
+
+.index-list{
+  border-top:1px solid var(--border-hairline);
+}
+
+.index-row{
+  display:grid;
+  grid-template-columns:2.2fr 1.6fr auto;
+  gap:16px; align-items:center;
+  padding:24px 4px;
+  border-bottom:1px solid var(--border-hairline);
+  cursor:pointer;
+  transition:padding .3s var(--ease), background .3s var(--ease);
+}
+@media (prefers-reduced-motion: no-preference){
+  .index-row:hover{
+    padding-left:16px; padding-right:16px;
+    background:var(--bg-surface);
+  }
+}
+
+.index-row .it{ font-size:1.15rem; font-weight:500; letter-spacing:-.01em; color:var(--text-ink); }
+.index-row .id{ color:var(--text-muted); font-size:.92rem; }
+.index-row .ia{
+  color:var(--brand-accent); font-family:var(--font-mono); font-size:.7rem;
+  letter-spacing:.08em; text-transform:uppercase;
+  opacity:0; transition:opacity .3s var(--ease);
+}
+.index-row:hover .ia{ opacity:1; }
+
+@media (max-width:640px){
+  .index-row{ grid-template-columns:1fr; gap:4px; }
+  .index-row .ia{ display:none; }
+}

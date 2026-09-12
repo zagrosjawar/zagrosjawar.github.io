@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Zagros Jawar — UX/UI Designer</title>
+<meta name="description" content="Zagros Jawar — junior UX/UI designer in Bergen, Norway. Case studies in AI, health information, and design-to-development handoff." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="assets/css/tokens.css">
+<link rel="stylesheet" href="assets/css/nav.css">
+<link rel="stylesheet" href="assets/css/hero.css">
+<link rel="stylesheet" href="assets/css/work.css">
+<link rel="stylesheet" href="assets/css/more-work.css">
+<link rel="stylesheet" href="assets/css/about.css">
+<link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+
+<!-- ============================================================
+     NAV
+     ============================================================ -->
+<nav class="nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="#home" class="brand">
+      <span class="brand-dot"></span>
+      Zagros Jawar
+    </a>
+
+    <div class="nav-links">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </div>
+
+    <button class="nav-menu-btn" id="nav-menu-btn">MENU</button>
+  </div>
+
+  <div class="nav-mobile-panel">
+    <a href="#work" class="h3">Work</a>
+    <a href="#about" class="h3">About</a>
+    <a href="#contact" class="btn btn-ghost" style="width:fit-content;">Get in touch</a>
+  </div>
+</nav>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section class="hero" id="home">
+  <div class="particle-field" id="hero-field"></div>
+
+  <div class="wrap">
+    <div class="hero-container">
+
+      <div class="hero-eyebrow">
+        <span class="line"></span>
+        <span class="mono-label">UX/UI · PRODUCT DESIGN · BERGEN, NORWAY</span>
+      </div>
+
+      <h1 class="h1 hero-h1" id="hero-h1">
+        I design clear, useful digital experiences people can
+        <span class="mark">trust<span class="underline"></span></span><span class="period" id="hero-period">.</span>
+      </h1>
+
+      <p class="body-large hero-sub">
+        Junior UX/UI designer turning ideas and real user problems into working prototypes — designs that are useful, functional, and enjoyable to use.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#work" class="btn btn-primary">View work</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
+
+      <div class="hero-meta">
+        <div class="hero-meta-item">
+          <span class="mono-label">FOCUS</span>
+          <span class="v">UX/UI · Product Design</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="mono-label">CURRENTLY</span>
+          <span class="v">Open to junior roles</span>
+        </div>
+        <div class="hero-meta-item">
+          <span class="mono-label">BASED IN</span>
+          <span class="v">Bergen. Open to relocation. Remote.</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     WORK
+     ============================================================ -->
+<section class="section" id="work">
+  <div class="wrap">
+
+    <div class="sec-head">
+      <h2 class="h2">Selected work</h2>
+      <span class="mono-label">3 SELECTED PROJECTS</span>
+    </div>
+
+    <div class="work-grid">
+      <a href="work/vital.html" class="case-card case-featured">
+        <div class="case-body">
+          <div class="case-tags">
+            <span class="tag">AI · Health</span>
+            <span class="tag">UX Research</span>
+            <span class="tag">Chrome Extension</span>
+          </div>
+          <h3 class="h3 case-title">VITAL</h3>
+          <p class="case-desc">
+            VITAL, short for Verification and Intelligence Tool for Accurate Health Literature, is a Chrome extension prototype for evaluating health and lifestyle claims in real time. It scans visible article content, highlights relevant claims, and presents source support, claim status, and framing analysis in a side panel.
+          </p>
+          <span class="case-link">Read case study <span class="arrow">→</span></span>
+        </div>
+        <div class="case-visual" id="vital-visual"></div>
+      </a>
+    </div>
+
+    <div class="work-grid-2">
+      <a href="work/veridash.html" class="case-card case-sm">
+        <div class="case-visual sm" id="veridash-visual"></div>
+        <div class="case-body">
+          <div class="case-tags">
+            <span class="tag">Multimedia Verification</span>
+            <span class="tag">Dashboard</span>
+          </div>
+          <h3 class="h3 case-title">VeriDash</h3>
+          <p class="case-desc">
+            VeriDash is a redesigned verification dashboard for analyzing video and image evidence — built for journalists and fact-checkers. It adds OCR text extraction, external geolocation lookup, session saving, and a customizable, card-based layout to speed up multimedia verification.
+          </p>
+          <span class="case-link">Read case study <span class="arrow">→</span></span>
+        </div>
+      </a>
+
+      <a href="work/change-watcher.html" class="case-card case-sm">
+        <div class="case-visual sm" id="changewatcher-visual"></div>
+        <div class="case-body">
+          <div class="case-tags">
+            <span class="tag">Figma Plugin</span>
+            <span class="tag">Design-Dev Handoff</span>
+          </div>
+          <h3 class="h3 case-title">Change Watcher</h3>
+          <p class="case-desc">
+            Change Watcher is a Figma plug-in concept that tracks design changes after handoff, so developers can see exactly what changed, where, and why. It groups updates by frame, flags edits in real time, and uses an AI assistant to explain each change in plain language.
+          </p>
+          <span class="case-link">Read case study <span class="arrow">→</span></span>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     MORE WORK
+     ============================================================ -->
+<section class="section">
+  <div class="wrap">
+
+    <div class="sec-head">
+      <h2 class="h2">More work</h2>
+      <span class="mono-label">OTHER PROJECTS</span>
+    </div>
+
+    <div class="index-list">
+      <a href="work/everywhere.html" class="index-row">
+        <span class="it">EveryWhere</span>
+        <span class="id">Web development · EV charging network &amp; planner</span>
+        <span class="ia">View →</span>
+      </a>
+      <a href="work/course-platform.html" class="index-row">
+        <span class="it">Course Platform</span>
+        <span class="id">Figma, HTML &amp; CSS · Online learning platform</span>
+        <span class="ia">View →</span>
+      </a>
+      <a href="work/flexphil.html" class="index-row">
+        <span class="it">FlexPhil</span>
+        <span class="id">Interaction design · Gamified learning experience</span>
+        <span class="ia">View →</span>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     ABOUT
+     ============================================================ -->
+<section class="section" id="about">
+  <div class="wrap">
+
+    <div class="sec-head">
+      <h2 class="h2">About</h2>
+      <span class="mono-label">BACKGROUND &amp; APPROACH</span>
+    </div>
+
+    <div class="about-body">
+
+      <div class="about-skills">
+        <div class="skill-group">
+          <span class="mono-label">UX/UI DESIGN</span>
+          <p>User research · Information architecture · Prototyping · Interaction design · Usability testing · Accessibility</p>
+        </div>
+        <div class="skill-group">
+          <span class="mono-label">CODE</span>
+          <p>HTML5 · CSS3 · JavaScript · TypeScript · Python · SQL · Git</p>
+        </div>
+        <div class="skill-group">
+          <span class="mono-label">TOOLS</span>
+          <p>Figma · Framer · Canva · VS Code · AI tools</p>
+        </div>
+        <div class="skill-group">
+          <span class="mono-label">LANGUAGES</span>
+          <p>Norwegian · English · Kurdish · Arabic</p>
+        </div>
+      </div>
+
+      <div class="about-bio">
+        <p>I'm a UX/UI designer with bachelor's degrees in Information Science and Media and Interaction Design from the University of Bergen. My path into design started with curiosity — working in Norway, I became interested in how digital the country is, from BankID to MinID to everyday online services, and wanted to understand how those systems are actually built.</p>
+        <p>That curiosity took me into Information Science, where I learned how the web, databases, and information systems actually work. Two courses — Human-Computer Interaction and Interaction Design — pulled me further in, and I decided to go deeper into UX/UI with a second degree in Media and Interaction Design.</p>
+        <p>Through my studies and self-learning, I've worked the entire design process — human-centered design, the Double Diamond framework, heuristic evaluation, and usability testing — from early research to a working prototype. I design and build: this site is hand-coded, and my case studies — VITAL, VeriDash, and Change Watcher — cover AI, health information, and design-to-development handoff.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT + FOOTER
+     ============================================================ -->
+<section class="contact wrap" id="contact">
+  <h2 class="h2 contact-heading">Have a project in mind? Let's build it.</h2>
+
+  <div class="contact-actions">
+    <a href="mailto:zagros.jawar@gmail.com" class="btn btn-primary">zagros.jawar@gmail.com</a>
+  </div>
+
+  <div class="contact-social">
+    <a href="https://www.linkedin.com/in/zagrosjawar/" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="https://github.com/zagrosjawar" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-inner">
+    <span class="mono-label">© 2026 ZAGROS JAWAR</span>
+    <div class="foot-links">
+      <a href="https://www.linkedin.com/in/zagrosjawar/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/zagrosjawar" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:zagros.jawar@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/nav.js"></script>
+<script src="assets/js/hero.js"></script>
+</body>
+</html>
