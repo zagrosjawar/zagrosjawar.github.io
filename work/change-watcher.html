@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Change Watcher — Zagros Jawar</title>
+<meta name="description" content="Change Watcher is a Figma plug-in concept that tracks design changes after handoff, so developers always know what changed and why." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/nav.css">
+<link rel="stylesheet" href="../assets/css/case-study.css">
+<link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html#home" class="brand">
+      <span class="brand-dot"></span>
+      Zagros Jawar
+    </a>
+    <div class="nav-links">
+      <a href="../index.html#work" class="nav-link">Work</a>
+      <a href="../index.html#about" class="nav-link">About</a>
+      <a href="../index.html#contact" class="nav-cta">Get in touch</a>
+    </div>
+    <button class="nav-menu-btn" id="nav-menu-btn">MENU</button>
+  </div>
+  <div class="nav-mobile-panel">
+    <a href="../index.html#work" class="h3">Work</a>
+    <a href="../index.html#about" class="h3">About</a>
+    <a href="../index.html#contact" class="btn btn-ghost" style="width:fit-content;">Get in touch</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <a href="../index.html#work" class="back-link">← All work</a>
+</div>
+
+<!-- HERO -->
+<header class="cs-hero wrap">
+  <div class="cs-tags">
+    <span class="tag">Figma Plugin</span>
+    <span class="tag">Design-Dev Handoff</span>
+    <span class="tag">Field Research</span>
+  </div>
+  <h1 class="h1 cs-title">Change Watcher</h1>
+  <p class="body-large cs-tagline">Keeping developers in sync when design changes after handoff.</p>
+
+  <div class="cs-video-wrap">
+    <img src="../assets/img/change-watcher-cover.png" alt="Change Watcher — Figma plugin concept" style="width:100%;height:100%;object-fit:cover;display:block;">
+  </div>
+
+  <div class="cs-facts">
+    <div class="cs-fact"><span class="mono-label">TEAM</span><span class="v">5 students</span></div>
+    <div class="cs-fact"><span class="mono-label">MY ROLE</span><span class="v">Field research, UX</span></div>
+    <div class="cs-fact"><span class="mono-label">CONTEXT</span><span class="v">Course project (MIX203), University of Bergen</span></div>
+    <div class="cs-fact"><span class="mono-label">TIMELINE</span><span class="v">Fall 2024</span></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="cs-body">
+
+    <section class="cs-block">
+      <span class="cs-step">The problem</span>
+      <p>We visited a Bergen consultancy and watched how designers and developers actually work together. The biggest friction point: developers get overwhelmed by huge Figma handoffs, and when a designer changes something afterward, no one notices until it breaks something downstream.</p>
+    </section>
+
+    <section class="cs-block">
+      <span class="cs-step">Process</span>
+      <p>Field visits, interviews, and observation at a Bergen consultancy — watching how designers and developers actually hand off work. Then a design sprint: HKV brainstorming, dot-voting, sketching, and wireframes in Figma.</p>
+      <p>Internal handoffs went fine — the real pain was with external developers unfamiliar with Figma, who often ended up not knowing what changed.</p>
+
+      <div class="cs-carousel" data-captions='["HKV brainstorming — naming the real problems","Dot-voting to find the strongest direction","Sketching the first concepts","Refining the idea together","Storyboarding the AI-assistant flow","Wireframing the Figma plugin"]'>
+        <div class="cs-carousel-track">
+          <img src="../assets/img/change-watcher-sprint/sprint-01-brainstorm.jpeg" alt="HKV brainstorming sticky notes">
+          <img src="../assets/img/change-watcher-sprint/sprint-02-voting.jpeg" alt="Dot-voting on ideas">
+          <img src="../assets/img/change-watcher-sprint/sprint-03-sketching.jpeg" alt="Sketching concepts">
+          <img src="../assets/img/change-watcher-sprint/sprint-04-sketching-blurred.jpeg" alt="Team sketching together">
+          <img src="../assets/img/change-watcher-sprint/sprint-05-storyboard.jpeg" alt="Storyboard sketch of the AI assistant flow">
+          <img src="../assets/img/change-watcher-sprint/sprint-06-wireframes.jpeg" alt="Wireframes of the Figma plugin">
+        </div>
+        <button class="cs-carousel-nav prev">←</button>
+        <button class="cs-carousel-nav next">→</button>
+      </div>
+      <div class="cs-carousel-dots">
+        <span class="active"></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+      <p class="cs-carousel-caption"></p>
+    </section>
+
+    <section class="cs-block">
+      <span class="cs-step">The key decision</span>
+      <p>Rather than build a separate app, we designed "Changes" as a feature living directly inside Figma — where developers already work. It tracks edits after handoff and uses an AI assistant to explain what changed, in plain language, without forcing anyone to leave their existing workflow.</p>
+    </section>
+
+    <section class="cs-block">
+      <span class="cs-step">Result</span>
+      <p>A working Figma plugin concept, tested with real users: 80% completed tasks successfully, and 90% said it would be genuinely useful in cross-functional teams.</p>
+      <div class="cs-actions">
+        <a href="https://www.figma.com/proto/aFWCY00CizxrPPe1Hkc91k/MIX-203-Autumn2024-%7C-Module-3-%7C-Change-Watcher-Project---?page-id=0%3A1&node-id=120-1605&node-type=frame&viewport=252%2C151%2C0.1&t=bekOn1ahnD8Ai2rG-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=96%3A1124&desktop-link-click-timestamp=1789326959688&desktop-ul-exp-bucket=po" class="btn btn-primary">View prototype in Figma →</a>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-inner">
+    <span class="mono-label">© 2026 ZAGROS JAWAR</span>
+    <div class="foot-links">
+      <a href="https://www.linkedin.com/in/zagrosjawar/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/zagrosjawar" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:zagros.jawar@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/nav.js"></script>
+<script src="../assets/js/carousel.js"></script>
+</body>
+</html>

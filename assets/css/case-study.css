@@ -1,0 +1,94 @@
+/* ============================================================
+   case-study.css — shared layout for case-study pages
+   ============================================================ */
+
+.back-link{
+  display:inline-flex; align-items:center; gap:8px;
+  font-family:var(--font-mono); font-size:.72rem; letter-spacing:.08em; text-transform:uppercase;
+  color:var(--text-muted); padding:24px 0;
+  transition:color .2s ease;
+}
+.back-link:hover{ color:var(--text-ink); }
+
+/* ---- Hero video ---- */
+.cs-hero{ padding-bottom:40px; }
+.cs-tags{ display:flex; gap:8px; flex-wrap:wrap; margin-bottom:24px; }
+.cs-title{ margin-bottom:16px; }
+.cs-tagline{ color:var(--text-muted); max-width:50ch; }
+
+.cs-video-wrap{
+  position:relative; width:100%;
+  border-radius:var(--radius); overflow:hidden;
+  margin:32px 0 0;
+  background:#000;
+  aspect-ratio:16/9;
+}
+.cs-video-wrap video{ width:100%; height:100%; object-fit:cover; display:block; }
+
+/* ---- Facts strip ---- */
+.cs-facts{
+  display:flex; gap:56px; flex-wrap:wrap;
+  border-top:1px solid var(--border-hairline);
+  border-bottom:1px solid var(--border-hairline);
+  padding:24px 0;
+  margin:40px 0;
+}
+.cs-fact{ display:flex; flex-direction:column; gap:6px; }
+.cs-fact .v{ font-size:1rem; color:var(--text-ink); }
+@media (max-width:640px){ .cs-facts{ flex-direction:column; gap:16px; } }
+
+/* ---- Content blocks ---- */
+.cs-body{ max-width:680px; }
+.cs-block{ padding:40px 0; }
+.cs-block + .cs-block{ border-top:1px solid var(--border-hairline); }
+.cs-step{
+  font-family:var(--font-mono); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase;
+  color:var(--brand-accent); margin-bottom:12px; display:block;
+}
+.cs-block h3{ margin-bottom:16px; }
+.cs-block p{ font-size:1.05rem; line-height:1.7; color:#34322d; }
+.cs-block p + p{ margin-top:16px; }
+
+.cs-quote{
+  font-family:var(--font-display); font-weight:500; font-size:1.3rem; line-height:1.4;
+  color:var(--text-ink);
+  border-left:3px solid var(--brand-accent);
+  padding-left:20px; margin:20px 0;
+}
+
+.cs-actions{ display:flex; gap:14px; flex-wrap:wrap; margin-top:20px; }
+
+/* ---- Next case study ---- */
+.cs-next{ border-top:1px solid var(--border-hairline); margin-top:40px; padding-top:40px; padding-bottom:40px; }
+
+/* ---- Photo carousel ---- */
+.cs-carousel{
+  position:relative; margin:20px 0;
+  border-radius:14px; overflow:hidden;
+  background:#000;
+}
+.cs-carousel-track{
+  display:flex; transition:transform .4s var(--ease);
+}
+.cs-carousel-track img{
+  width:100%; flex:0 0 100%; display:block; aspect-ratio:4/3; object-fit:cover;
+}
+.cs-carousel-nav{
+  position:absolute; top:50%; transform:translateY(-50%);
+  width:36px; height:36px; border-radius:50%;
+  background:rgba(255,255,255,.9); border:none; cursor:pointer;
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-mono); font-size:1rem;
+}
+.cs-carousel-nav.prev{ left:12px; }
+.cs-carousel-nav.next{ right:12px; }
+.cs-carousel-dots{
+  display:flex; justify-content:center; gap:6px; margin-top:12px;
+}
+.cs-carousel-dots span{
+  width:6px; height:6px; border-radius:50%; background:var(--border-hairline); cursor:pointer;
+}
+.cs-carousel-dots span.active{ background:var(--brand-accent); }
+.cs-carousel-caption{
+  text-align:center; font-size:.85rem; color:var(--text-muted); margin-top:8px;
+}
