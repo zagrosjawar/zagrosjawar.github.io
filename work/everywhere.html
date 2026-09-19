@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EVerywhere — Zagros Jawar</title>
+<meta name="description" content="EVerywhere maps EV charging stations across Norway, plans routes around them, and shows usage stats so drivers don't waste a trip on a full charger." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/nav.css">
+<link rel="stylesheet" href="../assets/css/case-study.css">
+<link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html#home" class="brand">
+      <span class="brand-dot"></span>
+      Zagros Jawar
+    </a>
+    <div class="nav-links">
+      <a href="../index.html#work" class="nav-link">Work</a>
+      <a href="../index.html#about" class="nav-link">About</a>
+      <a href="../index.html#contact" class="nav-cta">Get in touch</a>
+    </div>
+    <button class="nav-menu-btn" id="nav-menu-btn">MENU</button>
+  </div>
+  <div class="nav-mobile-panel">
+    <a href="../index.html#work" class="h3">Work</a>
+    <a href="../index.html#about" class="h3">About</a>
+    <a href="../index.html#contact" class="btn btn-ghost" style="width:fit-content;">Get in touch</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <a href="../index.html#work" class="back-link">← All work</a>
+</div>
+
+<!-- HERO -->
+<header class="cs-hero wrap">
+  <div class="cs-tags">
+    <span class="tag">Web Development</span>
+    <span class="tag">Google Maps API</span>
+    <span class="tag">Highcharts</span>
+  </div>
+  <h1 class="h1 cs-title">EVerywhere</h1>
+  <p class="body-large cs-tagline">Helping EV drivers find a charger, not a headache.</p>
+
+  <div class="cs-video-wrap" style="aspect-ratio:1862/968;">
+    <img src="../assets/img/everywhere-cover.png" alt="EVerywhere app screens — connect, route planning, drive mode, charging stations, stats, trips, profile" style="width:100%;height:100%;object-fit:cover;display:block;">
+  </div>
+
+  <div class="cs-facts">
+    <div class="cs-fact"><span class="mono-label">TEAM</span><span class="v">5 students</span></div>
+    <div class="cs-fact"><span class="mono-label">MY ROLE</span><span class="v">UX/UI &amp; development</span></div>
+    <div class="cs-fact"><span class="mono-label">CONTEXT</span><span class="v">Course project (MIX114), University of Bergen</span></div>
+    <div class="cs-fact"><span class="mono-label">TIMELINE</span><span class="v">Spring 2024</span></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="cs-body">
+
+    <section class="cs-block">
+      <span class="cs-step">The problem</span>
+      <p>EV drivers need to know where to charge — and whether a station will actually be free when they get there. EVerywhere maps charging stations across Norway, plans routes around them, and shows usage data so drivers don't waste a trip on a full charger.</p>
+    </section>
+
+    <section class="cs-block">
+      <span class="cs-step">Process</span>
+      <p>A full design sprint — "How Might We" questions, 2-year goals, Crazy 8s, and a storyboard — landed on a mobile-first, minimalist design so drivers aren't distracted while driving. Built from Figma into a working app with Google Maps API, Highcharts, and a custom API for charging data.</p>
+      <p>A monochrome teal palette with few elements per screen kept the focus on the road, not the interface.</p>
+    </section>
+
+    <section class="cs-block">
+      <span class="cs-step">The key decision</span>
+      <p>No usage-data API existed for EV charging stations in Norway — so the team built one. A custom API on npoint.io powers the usage statistics shown for each station, giving drivers a sense of how busy a charger typically is, using realistic mock data.</p>
+    </section>
+
+    <section class="cs-block">
+      <span class="cs-step">Result</span>
+      <p>A working prototype covering the full flow: connecting a car, planning a route, driving with live directions, and browsing nearby stations with usage stats. Built with HTML, CSS, and JavaScript from a high-fidelity Figma design.</p>
+      <div class="cs-actions">
+        <a href="https://zagrosjawar.github.io/Ev-erywhere/html/frame-page.html" target="_blank" rel="noopener" class="btn btn-primary">View live prototype →</a>
+        <a href="https://github.com/zagrosjawar/Ev-erywhere" target="_blank" rel="noopener" class="btn btn-ghost">View code on GitHub →</a>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-inner">
+    <span class="mono-label">© 2026 ZAGROS JAWAR</span>
+    <div class="foot-links">
+      <a href="https://www.linkedin.com/in/zagrosjawar/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/zagrosjawar" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:zagros.jawar@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/nav.js"></script>
+</body>
+</html>

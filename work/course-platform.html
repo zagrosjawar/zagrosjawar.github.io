@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>My Platform — Zagros Jawar</title>
+<meta name="description" content="A shared online-learning platform concept for UiB and HVL — a filterable course catalog designed in Figma and built as a static HTML/CSS site." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/nav.css">
+<link rel="stylesheet" href="../assets/css/case-study.css">
+<link rel="stylesheet" href="../assets/css/contact.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav" id="site-nav">
+  <div class="nav-inner">
+    <a href="../index.html#home" class="brand">
+      <span class="brand-dot"></span>
+      Zagros Jawar
+    </a>
+    <div class="nav-links">
+      <a href="../index.html#work" class="nav-link">Work</a>
+      <a href="../index.html#about" class="nav-link">About</a>
+      <a href="../index.html#contact" class="nav-cta">Get in touch</a>
+    </div>
+    <button class="nav-menu-btn" id="nav-menu-btn">MENU</button>
+  </div>
+  <div class="nav-mobile-panel">
+    <a href="../index.html#work" class="h3">Work</a>
+    <a href="../index.html#about" class="h3">About</a>
+    <a href="../index.html#contact" class="btn btn-ghost" style="width:fit-content;">Get in touch</a>
+  </div>
+</nav>
+
+<div class="wrap">
+  <a href="../index.html#work" class="back-link">← All work</a>
+</div>
+
+<!-- HERO -->
+<header class="cs-hero wrap">
+  <div class="cs-tags">
+    <span class="tag">Figma</span>
+    <span class="tag">HTML &amp; CSS</span>
+    <span class="tag">Design System</span>
+  </div>
+  <h1 class="h1 cs-title">My Platform</h1>
+  <p class="body-large cs-tagline">One design system, two universities, real filtering that works.</p>
+
+  <div class="cs-video-wrap" style="aspect-ratio:1678/1170;">
+    <img src="../assets/img/course-platform-cover.png" alt="My Platform course filtering interface" style="width:100%;height:100%;object-fit:cover;display:block;">
+  </div>
+
+  <div class="cs-facts">
+    <div class="cs-fact"><span class="mono-label">PROJECT</span><span class="v">Solo exam</span></div>
+    <div class="cs-fact"><span class="mono-label">MY ROLE</span><span class="v">UX/UI &amp; development</span></div>
+    <div class="cs-fact"><span class="mono-label">CONTEXT</span><span class="v">Exam (MIX114), University of Bergen</span></div>
+    <div class="cs-fact"><span class="mono-label">TIMELINE</span><span class="v">Spring 2024</span></div>
+  </div>
+</header>
+
+<div class="wrap">
+  <div class="cs-body">
+
+    <section class="cs-block">
+      <span class="cs-step">The problem</span>
+      <p>UiB and HVL wanted a shared course platform — but one that still felt like both universities, not a generic third brand. Students needed to filter dozens of courses by field, level, difficulty, and language to find the right fit.</p>
+    </section>
+
+    <section class="cs-block">
+      <span class="cs-step">Process</span>
+      <p>Built a shared design system first — typography, color, and components that could carry both institutions' identity — then designed the course list and detail pages in Figma before coding them in static HTML and CSS.</p>
+    </section>
+
+    <section class="cs-block">
+      <span class="cs-step">The key decision</span>
+      <p>Reviews are split by student type — university students vs. external participants — because their needs (ECTS credit vs. a certificate) are different, and their feedback shouldn't be mixed into one generic score.</p>
+    </section>
+
+    <section class="cs-block">
+      <span class="cs-step">Result</span>
+      <p>A working prototype: a filterable course catalog and detail pages with participation stats and categorized reviews, built end-to-end from design system to static site.</p>
+      <div class="cs-actions">
+        <a href="https://zagrosjawar.github.io/my_platfrom_project/index.html" target="_blank" rel="noopener" class="btn btn-primary">View live site →</a>
+        <a href="https://github.com/zagrosjawar/my_platfrom_project" target="_blank" rel="noopener" class="btn btn-ghost">View code on GitHub →</a>
+      </div>
+    </section>
+
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot-inner">
+    <span class="mono-label">© 2026 ZAGROS JAWAR</span>
+    <div class="foot-links">
+      <a href="https://www.linkedin.com/in/zagrosjawar/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/zagrosjawar" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:zagros.jawar@gmail.com">Email</a>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/nav.js"></script>
+</body>
+</html>
