@@ -67,7 +67,7 @@
 
 
 #curatedai-visual{
-  background-image:url('../img/curatedai-cover.webp');
+  background-image:url('../img/work-curatedai-cover.webp');
   background-color:#b1ddce; /* matches mockup edge so the square image blends into the card */
   background-size:contain; background-repeat:no-repeat; background-position:center;
 }
