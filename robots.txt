@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zagrosjawar.com/sitemap.xml

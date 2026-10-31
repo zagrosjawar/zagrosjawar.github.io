@@ -3,11 +3,35 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Zagros Jawar — UX/UI Designer &amp; Research Assistant</title>
-<meta name="description" content="Zagros Jawar — UX/UI designer and research assistant in Bergen, Norway. Work spanning AI transparency, user research, and interaction design." />
-<meta property="og:title" content="Zagros Jawar | UX/UI Designer & Developer">
-<meta property="og:description" content="UX/UI designer and research assistant at SFI MediaFutures. I combine user research, interface design, and prototyping to make complex technology clear and useful."><meta property="og:image" content="https://zagrosjawar.com/assets/img/og-preview.png">
-<meta property="og:url" content="https://zagrosjawar.com">
+<title>Zagros Jawar | UX/UI Designer in Bergen, Norway</title>
+<meta name="description" content="UX/UI designer and research assistant at SFI MediaFutures in Bergen, Norway. User research, interaction design and prototyping." />
+<link rel="canonical" href="https://zagrosjawar.com/" />
+<meta name="theme-color" content="#FAF9F6" />
+<link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Zagros Jawar" />
+<meta property="og:title" content="Zagros Jawar | UX/UI Designer in Bergen, Norway" />
+<meta property="og:description" content="UX/UI designer and research assistant at SFI MediaFutures in Bergen, Norway. User research, interaction design and prototyping." />
+<meta property="og:image" content="https://zagrosjawar.com/assets/img/og-preview.png" />
+<meta property="og:image:alt" content="Zagros Jawar, UX/UI designer in Bergen, Norway" />
+<meta property="og:url" content="https://zagrosjawar.com/" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Zagros Jawar",
+  "jobTitle": "UX/UI Designer",
+  "url": "https://zagrosjawar.com/",
+  "image": "https://zagrosjawar.com/assets/img/og-preview.png",
+  "address": { "@type": "PostalAddress", "addressLocality": "Bergen", "addressCountry": "NO" },
+  "worksFor": { "@type": "Organization", "name": "SFI MediaFutures" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "University of Bergen" },
+  "sameAs": ["https://www.linkedin.com/in/zagrosjawar/", "https://github.com/zagrosjawar"]
+}
+</script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,11 +46,12 @@
 <link rel="stylesheet" href="assets/css/contact.css">
 </head>
 <body>
+<a href="#main" class="skip-link">Skip to content</a>
 
 <!-- ============================================================
      NAV
      ============================================================ -->
-<nav class="nav" id="site-nav">
+<nav class="nav" id="site-nav" aria-label="Main">
   <div class="nav-inner">
     <a href="#home" class="brand">
       <span class="brand-dot"></span>
@@ -39,10 +64,10 @@
       <a href="#contact" class="nav-cta">Get in touch</a>
     </div>
 
-    <button class="nav-menu-btn" id="nav-menu-btn">MENU</button>
+    <button class="nav-menu-btn" id="nav-menu-btn" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-mobile-panel">MENU</button>
   </div>
 
-  <div class="nav-mobile-panel">
+  <div class="nav-mobile-panel" id="nav-mobile-panel">
     <a href="#work" class="h3">Work</a>
     <a href="#about" class="h3">About</a>
     <a href="#contact" class="btn btn-ghost" style="width:fit-content;">Get in touch</a>
@@ -52,15 +77,16 @@
 <!-- ============================================================
      HERO
      ============================================================ -->
+<main id="main">
 <section class="hero" id="home">
-  <div class="particle-field" id="hero-field"></div>
+  <div class="particle-field" id="hero-field" aria-hidden="true"></div>
 
   <div class="wrap">
     <div class="hero-container">
 
       <div class="hero-eyebrow">
         <span class="line"></span>
-        <span class="mono-label">UX/UI & PRODUCT DESIGN · BERGEN, NORWAY</span>
+        <span class="mono-label">UX/UI &amp; PRODUCT DESIGN · BERGEN, NORWAY</span>
       </div>
 
      <h1 class="h1 hero-h1" id="hero-h1">
@@ -84,7 +110,7 @@
         </div>
         <div class="hero-meta-item">
           <span class="mono-label">OPEN TO</span>
-          <span class="v"><a href="https://www4.uib.no/finn-ansatte/zagros-jawar.jawar">UX/UI and Product Design roles</a></span>
+          <span class="v">UX/UI and Product Design roles</span>
         </div>
         <div class="hero-meta-item">
           <span class="mono-label">BASED IN</span>
@@ -150,7 +176,7 @@
           </div>
           <h3 class="h3 case-title">VeriDash</h3>
           <p class="case-desc">
-            VeriDash is a redesigned verification dashboard for analyzing video and image evidence — built for journalists and fact-checkers. It adds OCR text extraction, external geolocation lookup, session saving, and a customizable, card-based layout to speed up multimedia verification.
+            VeriDash is a redesigned verification dashboard for analyzing video and image evidence, built for journalists and fact-checkers. It adds OCR text extraction, external geolocation lookup, session saving, and a customizable, card-based layout to speed up multimedia verification.
           </p>
           <span class="case-link">Read case study <span class="arrow">→</span></span>
         </div>
@@ -218,7 +244,7 @@
 
      <div class="about-skills">
        <div class="skill-group">
-         <span class="mono-label">DESIGN & UX</span>
+         <span class="mono-label">DESIGN &amp; UX</span>
          <p>UX/UI Design · User Research · Information Architecture · Interaction Design · Prototyping · Usability Testing · Accessibility</p>
        </div>
      
@@ -228,7 +254,7 @@
        </div>
      
        <div class="skill-group">
-         <span class="mono-label">TOOLS & AI</span>
+         <span class="mono-label">TOOLS &amp; AI</span>
          <p>Figma · Canva · VS Code · AI-assisted Design, Research & Development</p>
        </div>
      
@@ -287,6 +313,7 @@
     <a href="https://github.com/zagrosjawar" target="_blank" rel="noopener">GitHub</a>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="wrap foot-inner">
