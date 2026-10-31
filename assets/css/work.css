@@ -66,4 +66,8 @@
 .case-sm .case-body{ padding:28px; }
 
 
-#curatedai-visual{ background-image:url('../img/curatedai-cover.png'); background-position:center top; }
+#curatedai-visual{
+  background-image:url('../img/curatedai-cover.webp');
+  background-color:#b1ddce; /* matches mockup edge so the square image blends into the card */
+  background-size:contain; background-repeat:no-repeat; background-position:center;
+}
