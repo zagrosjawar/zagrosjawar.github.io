@@ -11,9 +11,14 @@
 @media (max-width:640px){ .contact{ padding-top:80px; padding-bottom:64px; } }
 
 .contact-heading{
-  font-size:clamp(2rem, 5vw, 3.4rem);
-  max-width:18ch;
-  margin:0 auto 40px;
+  font-size:clamp(1.5rem, 3vw, 1.75rem);
+  margin:0 auto 16px;
+}
+.contact-sub{
+  color:var(--text-muted);
+  max-width:none;
+  text-wrap:balance;
+  margin:0 auto 32px;
 }
 
 .contact-actions{
@@ -21,7 +26,8 @@
   gap:14px; flex-wrap:wrap;
   margin-bottom:24px;
 }
-.contact-actions .btn{ font-size:1.05rem; padding:1rem 2rem; }
+.contact-actions .btn{ font-size:1rem; padding:.9rem 1.75rem; background:#efede8; color:var(--text-ink); border-color:#efede8; }
+.contact-actions .btn:hover{ background:#e6e3dc; border-color:#e6e3dc; color:var(--text-ink); }
 
 .contact-social{
   display:flex; justify-content:center; gap:24px;
