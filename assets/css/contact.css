@@ -11,20 +11,9 @@
 @media (max-width:640px){ .contact{ padding-top:80px; padding-bottom:64px; } }
 
 .contact-heading{
-  font-size:clamp(2rem, 4.5vw, 3.25rem);
-  max-width:23ch;
-  line-height:1.13;
-  margin:0 auto 18px;
-  text-wrap:balance;
-}
-
-.contact-description{
-  max-width:40ch;
-  margin:0 auto 36px;
-  font-size:clamp(1rem, 1.5vw, 1.15rem);
-  line-height:1.6;
-  color:var(--text-muted);
-  text-wrap:pretty;
+  font-size:clamp(2rem, 5vw, 3.4rem);
+  max-width:18ch;
+  margin:0 auto 40px;
 }
 
 .contact-actions{
