@@ -23,6 +23,7 @@
     menuBtn.addEventListener('click', function(){
       var isOpen = nav.classList.toggle('open');
       menuBtn.textContent = isOpen ? 'CLOSE' : 'MENU';
+      menuBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
     });
   }
 
@@ -31,7 +32,7 @@
   mobileLinks.forEach(function(link){
     link.addEventListener('click', function(){
       nav.classList.remove('open');
-      if(menuBtn) menuBtn.textContent = 'MENU';
+      if(menuBtn){ menuBtn.textContent = 'MENU'; menuBtn.setAttribute('aria-expanded','false'); }
     });
   });
 })();

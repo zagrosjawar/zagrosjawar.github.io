@@ -164,3 +164,10 @@ blockquote{
   padding:.28rem .6rem;
   border-radius:999px;
 }
+/* Skip link: visible only on keyboard focus */
+.skip-link{
+  position:absolute; left:16px; top:-48px; z-index:200;
+  background:var(--text-ink); color:var(--bg-base);
+  padding:10px 16px; border-radius:8px; transition:top .2s ease;
+}
+.skip-link:focus{ top:12px; }
