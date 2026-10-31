@@ -88,3 +88,15 @@
   letter-spacing:-.055em; line-height:1.1;
 }
 .curatedai-cover strong span{color:#a7d4bb;}
+
+/* The real CuratedAI website cover, stored at assets/img/curatedai-cover.png */
+#curatedai-visual > .curatedai-cover-image{
+  position:absolute;
+  inset:0;
+  z-index:2;
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center top;
+}
